@@ -9,7 +9,7 @@ def f(x):
     output = 3*x**2 - 6*x + 1
     return output
 
-h = 0.1
+h = 1e-4
 
 def Derivative():
     numerator = f(x+h) - f(x)
@@ -21,11 +21,11 @@ Derivative()
 
 # 4
 
-A = float(3)
-B = float(-4)
-C = float(1)
+# A = float(3)
+# B = float(-4)
+# C = float(1)
 
-def QuadraticFormula():
+def QuadraticFormula(A, B, C):
     numerator1 = float(-B + math.sqrt(B**2 -4*A*C))
     numerator2 = float(-B - math.sqrt(B**2 -4*A*C))
 
@@ -35,4 +35,4 @@ def QuadraticFormula():
     print("The first root is: " + str(Result1))
     print("The second root is: " + str(Result2))
 
-QuadraticFormula()
+QuadraticFormula(3, -4, 1)
