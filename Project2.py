@@ -3,10 +3,12 @@ import math
 
 # 3
 x = 1
+def Problem3():
+    output3 = 6*x-6
 
-output3 = 6*x-6
+    print("The slope of the equation at the point x = " + str(x) + " is " + str(output3))
 
-print("The slope of the equation at the point x = " + str(x) + " is " + str(output3))
+Problem3()
 
 # 4
 
@@ -23,3 +25,5 @@ def QuadraticFormula():
 
     print("The first root is: " + str(Result1))
     print("The second root is: " + str(Result2))
+
+QuadraticFormula()
