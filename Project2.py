@@ -1,29 +1,26 @@
-import math
 # Project 2 - Calc 1
+import math
 
 # 3
 
-x = 1
+x = 4
 
 def f(x):
     output = 3*x**2 - 6*x + 1
     return output
 
-h = 1e-4
+h = 1e-6
 
 def Derivative():
     numerator = f(x+h) - f(x)
     output = numerator/h
 
-    print("The slope of the equation at the point x = " + str(x) + " is " + str(output))
+    print("The slope of the equation at the point x = " + str(x) + " is " + str(round(output,4)))
 
 Derivative()
 
 # 4
-
-# A = float(3)
-# B = float(-4)
-# C = float(1)
+import math
 
 def QuadraticFormula(A, B, C):
     numerator1 = float(-B + math.sqrt(B**2 -4*A*C))
