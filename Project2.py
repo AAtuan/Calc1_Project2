@@ -2,13 +2,22 @@ import math
 # Project 2 - Calc 1
 
 # 3
+
 x = 1
-def Problem3():
-    output3 = 6*x-6
 
-    print("The slope of the equation at the point x = " + str(x) + " is " + str(output3))
+def f(x):
+    output = 3*x**2 - 6*x + 1
+    return output
 
-Problem3()
+h = 0.1
+
+def Derivative():
+    numerator = f(x+h) - f(x)
+    output = numerator/h
+
+    print("The slope of the equation at the point x = " + str(x) + " is " + str(output))
+
+Derivative()
 
 # 4
 
